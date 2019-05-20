@@ -1,11 +1,9 @@
 ---
-title: "Are Containers the Future of Computing?"
+title: "RsparkHub: Scaling Rspark with Kubernetes"
 author: "Jim Harner, West Virginia University"
-date: "DSSV 2018"
+date: "SDSS 2019"
 output:
-  slidy_presentation: default
   beamer_presentation: default
-  ioslides_presentation: default
 ---
 
 ```{r setup, include=FALSE}
