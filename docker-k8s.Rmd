@@ -201,9 +201,9 @@ The basic Kubernetes unit is the pod. Containers are assigned to pods---not host
 
 ## RSpark on Kubernetes
 
-RSpark consists of an ensemble of containers, but the RStudio container is central and provides RStudio Server and various drivers allowing connectivity to other services, e.e., Spark and HDFS. Unfortunately, RStudio Server Pro is requited to run Kubernetes. See: [Using Docker images with RStudio Server Pro, Launcher, and Kubernetes](https://support.rstudio.com/hc/en-us/articles/360019253393-Using-Docker-images-with-RStudio-Server-Pro-Launcher-and-Kubernetes).
+RSpark consists of an ensemble of containers, but the \texttt{rstudio} container is central and provides RStudio Server and various drivers allowing connectivity to other services, e.g., Spark and HDFS. Unfortunately, RStudio Server Pro is requited to run Kubernetes. See: [Using Docker images with RStudio Server Pro, Launcher, and Kubernetes](https://support.rstudio.com/hc/en-us/articles/360019253393-Using-Docker-images-with-RStudio-Server-Pro-Launcher-and-Kubernetes).
 
-However, there seems to be no way to efficiently deploy RStudio Server (the non-Pro version) on Kubernetes. Therefore, we are pursuing Docker Swarm.
+The intent of RSparkHub is to launch RSpark for each user. However, there appears to be no way to shutdown RStudio processes on demand so a 0 exit code is returned to Kubernetes. Instead, we have automated to the process using Ansible scripts on AWS.
 
 ## Rc$^2$ on Kubernetes
 
