@@ -212,11 +212,13 @@ The basic Kubernetes unit is the pod. Containers are assigned to pods---not host
 
 ## RSpark on Kubernetes
 
-RSpark consists of an ensemble of containers, but the \texttt{rstudio} container is central and provides RStudio Server and various drivers allowing connectivity to other services, e.g., Spark and HDFS. Unfortunately, RStudio Server Pro is requited to run Kubernetes. See: [Using Docker images with RStudio Server Pro, Launcher, and Kubernetes](https://support.rstudio.com/hc/en-us/articles/360019253393-Using-Docker-images-with-RStudio-Server-Pro-Launcher-and-Kubernetes).
+RSpark consists of an ensemble of containers, but the \texttt{rstudio} container is central and provides RStudio Server and various drivers allowing connectivity to other services, e.g., Spark and HDFS. However, RStudio Server Pro and Launcher are requited to run Kubernetes. See: [Using Docker images with RStudio Server Pro, Launcher, and Kubernetes](https://support.rstudio.com/hc/en-us/articles/360019253393-Using-Docker-images-with-RStudio-Server-Pro-Launcher-and-Kubernetes). 
 
-The intent of RSparkHub is to launch RSpark for each user. However, there appears to be no way to shutdown RStudio processes on demand so a 0 exit code is returned to Kubernetes. Instead, we have automated to the process using Ansible scripts on AWS.
+The intent of RSparkHub is to launch RSpark for each user. However, there appears to be no way to shutdown RStudio processes on demand so a 0 exit code is returned to Kubernetes. Instead, we have automated to the process using Ansible scripts on AWS, which spins up an instance for each user.
 
 ## Rc$^2$ on Kubernetes
+
+Rc$^2$ is a client-server environment for easily scaling R in a Kubernetes cluster. Other languages will be supported, e.g., Python and bash. Various services beyond R can be invoked, e.g., Spark and TensorFlow.
 
 Rc$^2$ has two components:
 
