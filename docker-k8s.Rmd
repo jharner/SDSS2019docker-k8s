@@ -3,14 +3,26 @@ title: 'RsparkHub: Scaling RSpark with Kubernetes'
 author: "Jim Harner, WVU, Mark Lilback, Rc$^2$ai, and Alex Harner, Rc$^2$ai"
 date: "SDSS 2019"
 output:
-  ioslides_presentation: default
   beamer_presentation: default
+  ioslides_presentation: default
   slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+## Important links
+
+[SDSS 2019 Talk: https://github.com/jharner/SDSS2019ldocker-k8s](https://github.com/jharner/SDSS2019ldocker-k8s)
+
+[RSpark: https://github.com/jharner/rspark](https://github.com/jharner/rspark)
+
+[RSpark Tutorial: https://github.com/jharner/rspark-tutorial](https://github.com/jharner/rspark-tutorial)
+
+[Rc$^2$ Server: https://github.com/rc2server](https://github.com/rc2server)
+
+[Rc$^2$ Swift Client: https://github.com/mlilback/rc2SwiftClient](https://github.com/mlilback/rc2SwiftClient)
 
 ## DevOps for Data Science
 
@@ -122,7 +134,6 @@ RStudio can be run by:
 docker run --rm -p 8787:8787 rocker/rstudio
 ```
 Open a browser with the URL `localhost:8787` and signin with user/password: `rstudio/rstudio`.
-
 
 ## Extending Images
 
@@ -239,9 +250,45 @@ Rc$^2$ is being deployed to [Digital Ocean Kubernetes](https://www.digitalocean.
 
 ![Rc$^2$ ClientR](figures/ClientR.png)
 
+## Rc$^2$ Client with an R Image Icon
+
+![Rc$^2$ ClientR2](figures/ClientR2.png)
+
+## Rc$^2$ Client with an R Plot
+
+![Rc$^2$ ClientR3](figures/ClientR3.png)
+
+## Rc$^2$ Client with an Rmd File
+
+![Rc$^2$ ClientRmd](figures/ClientRmd.png)
+
+## Rc$^2$ Client with a Help File
+
+![Rc$^2$ Help](figures/Help.png)
+
+## Rc$^2$ Client with a Search File
+
+\vspace{0.5cm}
+
+![Rc$^2$ Search](figures/Search.png)
+
+## Rc$^2$ Client with an Environment Display
+
+\vspace{0.5cm}
+
+![Rc$^2$ Environment](figures/Environment.png)
+
+## Rc$^2$ Client with a Data Frame Display
+
+\vspace{0.5cm}
+
+![Rc$^2$ DataFrame](figures/DataFrame.png)
+
 ## Rc$^2$ Deployment
 
-Kubernetes is available on AWS, Azure, and of course Google Cloud as a service. However, these cloud providers do not have predictable price models and users/developers can incur large unexpected costs. [Digital Ocean Kubernetes](https://www.digitalocean.com/products/kubernetes/) gives the user far more control over these costs, i.e., limits can be set and the user is only charged for what is actually used.
+Kubernetes is available on AWS, Azure, and of course Google Cloud as a service. However, these cloud providers do not have predictable price models and users/developers can incur large unexpected costs.
+
+[Digital Ocean Kubernetes](https://www.digitalocean.com/products/kubernetes/) gives the user far more control over these costs, i.e., limits can be set and the user is only charged for what is actually used.
 
 
 
