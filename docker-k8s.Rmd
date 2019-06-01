@@ -201,6 +201,8 @@ We can scale the Spark deployment to multiple workers in RSpark. But how do we s
 * scalability  
 * availabilty  
 
+## Kubernetes Principles
+
 Container and Kubernetes developers should adhere to certain principles:  
 
 * immutable infrastructure: update an image with a newer image in a single operation, i.e., no incremental updates (except in emergencies);  
