@@ -3,8 +3,8 @@ title: 'RsparkHub: Scaling RSpark with Kubernetes'
 author: "Jim Harner, WVU, Mark Lilback, Rc$^2$ai, and Alex Harner, Rc$^2$ai"
 date: "SDSS 2019"
 output:
-  beamer_presentation: default
   ioslides_presentation: default
+  beamer_presentation: default
   slidy_presentation: default
 ---
 
@@ -231,8 +231,13 @@ Rc$^2$ is being deployed to [Digital Ocean Kubernetes](https://www.digitalocean.
 ## Rc$^2$ Architecture
 
 ![Rc$^2$ Architecture](figures/rc2arch.png)
+## Rc$^2$ Client with an Rmd File
 
+![Rc$^2$ ClientRmd](figures/ClientRmd.png)
 
+## Rc$^2$ Client with an R File
+
+![Rc$^2$ ClientR](figures/ClientR.png)
 
 ## Rc$^2$ Deployment
 
